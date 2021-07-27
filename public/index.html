@@ -41,15 +41,29 @@
                         </h2>
                         <br>
                         <p class="has-text-centered">
-                            <a class="button is-medium is-info is-outlined">
-                                Sign In
+                            <a class="button is-medium is-info is-outlined" onclick="signIn()">
+                                Sign In with Google
                             </a>
                         </p>
                     </div>
                 </div>
             </div>
+            <div class='signup'>
+                <h3>Or</h3>
+                <h3>Sign up with username and password</h3>
+                <input placeholder='username' id="username" type="text">
+                <input placeholder="Password" id='password' type="password">
+                <button onclick="signupwithusername()">Sign Up</button>
+            </div>
         </div>
     </section>
-    
+    <script src="js/signIn.js"></script>
   </body>
 </html>
+<style>
+    .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body, .hero.is-halfheight .hero-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+    </style>
